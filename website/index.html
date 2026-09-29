@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mohamed Sufeeyan | Data Analytics, SQL, Power BI & AWS</title><meta name="description" content="Portfolio of Mohamed Sufeeyan: data analytics, SQL, Power BI and AWS.">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header"><div class="container nav"><a class="logo grad" href="index.html">Mohamed Sufeeyan</a>
+<ul class="menu" id="menu">
+<li><a href="index.html" aria-current="page">Home</a></li>
+<li><a href="education-experience.html">Education &amp; Experience</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a class="btn btn-primary btn-sm" href="assets/Mohamed_Sufeeyan_CV.pdf" download>Download CV</a></li></ul>
+<div style="display:flex;gap:8px"><button class="icon-btn" id="theme" aria-label="Toggle light or dark theme">◐</button>
+<button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div></div></header>
+<main id="main">
+<section class="hero"><div class="container hero-grid">
+<div><p style="color:var(--muted)">Hi, I'm</p><h1 class="grad">Mohamed Sufeeyan</h1>
+<p class="headline">Data Analytics | SQL | Power BI | Excel | AWS</p>
+<p class="lead">Electronics &amp; Communication graduate from VNIT Nagpur. I clean messy data, build dashboards people can explore, and ship projects to the cloud.</p>
+<div class="actions"><a class="btn btn-primary" href="assets/Mohamed_Sufeeyan_CV.pdf" download>Download CV</a><a class="btn" href="projects.html">View My Projects</a></div></div>
+<div class="code-card" aria-hidden="true"><div class="dots"><span></span><span></span><span></span></div>
+<div><span class="c">-- layoffs analysis</span></div><div><span class="k">WITH</span> yearly <span class="k">AS</span> (</div>
+<div>&nbsp;&nbsp;<span class="k">SELECT</span> industry, <span class="k">SUM</span>(laid_off)</div><div>&nbsp;&nbsp;<span class="k">FROM</span> <span class="s">layoffs_staging</span></div>
+<div>&nbsp;&nbsp;<span class="k">GROUP BY</span> industry)</div><div><span class="k">SELECT</span> * <span class="k">FROM</span> yearly;</div></div></div></section>
+
+<section id="about"><div class="container about-grid">
+<div class="reveal"><h2>About me</h2><p class="sub">I'm finishing a Bachelor of Technology in Electronics &amp; Communication Engineering (2021–2026) and moved into data analytics through hands-on projects and certifications.</p>
+<p class="sub">I use SQL, Power BI, Excel and Python to turn raw datasets into decisions, and AWS and GitHub Actions to deploy what I build.</p></div>
+<div class="grid g2 reveal"><div class="card stat"><b class="grad" data-count="4">0</b><span>Projects built</span></div><div class="card stat"><b class="grad" data-count="8">0</b><span>Certifications</span></div>
+<div class="card stat"><b class="grad" data-count="100">0</b><span>+ student records managed in Excel</span></div><div class="card stat"><b class="grad" data-count="30">0</b><span>% less reporting time with Excel automation</span></div></div></div></section>
+
+<section id="skills" style="background:var(--bg2)"><div class="container reveal"><h2>Skills</h2><p class="sub">Grouped by what I use them for. Filter to focus on one area.</p>
+<div class="filters" role="group" aria-label="Filter skills"><button class="chip active" data-f="all" aria-pressed="true">All</button><button class="chip" data-f="data" aria-pressed="false">Data &amp; BI</button><button class="chip" data-f="prog" aria-pressed="false">Programming &amp; Databases</button><button class="chip" data-f="cloud" aria-pressed="false">Cloud &amp; DevOps</button><button class="chip" data-f="soft" aria-pressed="false">Soft skills</button></div>
+<div class="grid g2">
+<div class="card skill" data-cat="data"><h3>Data Analytics &amp; BI</h3><div class="tags"><span class="tag">Advanced Excel</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Data Cleaning</span><span class="tag">Data Visualization</span><span class="tag">EDA</span></div></div>
+<div class="card skill" data-cat="prog"><h3>Programming &amp; Databases</h3><div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">MySQL</span><span class="tag">VHDL</span><span class="tag">DBMS</span><span class="tag">ETL</span></div></div>
+<div class="card skill" data-cat="cloud"><h3>Cloud &amp; DevOps</h3><div class="tags"><span class="tag">AWS</span><span class="tag">S3</span><span class="tag">EC2</span><span class="tag">IAM</span><span class="tag">VPC</span><span class="tag">RDS</span><span class="tag">Lambda</span><span class="tag">CloudWatch</span><span class="tag">CloudFront</span><span class="tag">Route 53</span><span class="tag">AWS CLI</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Git/GitHub</span><span class="tag">Linux</span><span class="tag">Shell Scripting</span><span class="tag">YAML</span></div></div>
+<div class="card skill" data-cat="soft"><h3>Soft skills</h3><div class="tags"><span class="tag">Communication</span><span class="tag">Problem Solving</span><span class="tag">Analytical Thinking</span><span class="tag">Attention to Detail</span><span class="tag">Client Relationship Management</span><span class="tag">Organizational Skills</span></div></div></div></div></section>
+
+<section id="education"><div class="container reveal"><h2>Education</h2><p class="sub">Where I studied.</p>
+<div class="card edu"><span class="tag">2021 – 2026</span><h3>Bachelor of Technology, Electronics &amp; Communication Engineering</h3><p>VNIT Nagpur</p>
+<p style="margin-top:18px"><a class="btn btn-sm" href="education-experience.html">View Education &amp; Experience →</a></p></div></div></section>
+
+<section id="projects" style="background:var(--bg2)"><div class="container reveal"><h2>Featured projects</h2><p class="sub">A few things I've built recently.</p>
+<div class="grid g2">
+<article class="card project"><div class="thumb"><img src="assets/images/aws-cicd.png" alt="Screenshot of the AWS CI/CD portfolio deployment" loading="lazy" onerror="this.remove()"><span aria-hidden="true">☁</span></div><h3>AWS CI/CD Portfolio Deployment</h3><p>Portfolio hosted on Amazon S3, with a GitHub Actions workflow that deploys every push to main, secured with IAM and GitHub Secrets.</p><div class="tags"><span class="tag">AWS S3</span><span class="tag">GitHub Actions</span><span class="tag">IAM</span></div><a class="btn btn-sm" href="https://github.com/mohamed-sufeeyan/AWS-PORTFOLIO-SUFEEYAN" target="_blank" rel="noopener">GitHub</a></article>
+<article class="card project"><div class="thumb"><img src="assets/images/sql-eda.png" alt="Screenshot of the SQL data cleaning and EDA project" loading="lazy" onerror="this.remove()"><span aria-hidden="true">▤</span></div><h3>SQL Data Cleaning &amp; EDA</h3><p>Cleaned a global layoffs dataset, then found industry, company and yearly trends using JOINs, CTEs and window functions.</p><div class="tags"><span class="tag">MySQL</span><span class="tag">CTEs</span><span class="tag">Window functions</span></div><a class="btn btn-sm" href="https://github.com/mohamed-sufeeyan/SQL-PROJECTS" target="_blank" rel="noopener">GitHub</a></article>
+<article class="card project"><div class="thumb"><img src="assets/images/powerbi-salary.png" alt="Screenshot of the Data Jobs Salary Dashboard in Power BI" loading="lazy" onerror="this.remove()"><span aria-hidden="true">◔</span></div><h3>Data Jobs Salary Dashboard</h3><p>Interactive Power BI dashboard comparing analyst salaries and cost of living across countries, with a star schema and DAX measures.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span></div><a class="btn btn-sm" href="https://github.com/mohamed-sufeeyan/power-bi-dashboards" target="_blank" rel="noopener">GitHub</a></article><article class="card project"><div class="thumb"><img src="assets/images/excel-sales.png" alt="Screenshot of the Interactive Sales Dashboard in Excel" loading="lazy" onerror="this.remove()"><span aria-hidden="true">▦</span></div><h3>Interactive Sales Dashboard</h3><p>Excel dashboard built with Pivot Tables, Pivot Charts and Slicers to analyze sales, profit, products and payment trends. Automated monthly KPI reporting, cutting reporting time by 30%.</p><div class="tags"><span class="tag">Excel</span><span class="tag">Pivot Tables</span><span class="tag">Slicers</span></div><a class="btn btn-sm" href="https://github.com/mohamed-sufeeyan/excel-sales-dashboard" target="_blank" rel="noopener">GitHub</a></article></div>
+<p style="margin-top:28px"><a class="btn" href="projects.html">View All Projects →</a></p></div></section>
+
+<section id="certs"><div class="container reveal"><h2>Certifications</h2><p class="sub">Formal learning behind the hands-on work.</p>
+<div class="grid g2">
+<div class="card cert"><i>🎓</i><div>Google Data Analytics Professional Certificate<small>Jul 2026</small></div></div>
+<div class="card cert"><i>🎓</i><div>Excel Data Analysis for Professionals and Analysts<small>Jul 2026</small></div></div>
+<div class="card cert"><i>🎓</i><div>Visual Analytics (Tableau)<small>Jul 2026</small></div></div>
+<div class="card cert"><i>🎓</i><div>SQL: A Practical Introduction for Querying Databases<small>Jul 2026</small></div></div>
+<div class="card cert"><i>🎓</i><div>Data Analysis and Visualization with Power BI<small>Jun 2026</small></div></div>
+<div class="card cert"><i>🎓</i><div>Power BI: Data Modeling and Data Analysis<small>Jun 2026</small></div></div>
+<div class="card cert"><i>🎓</i><div>Tata – Data Visualization: Empowering Business with Effective Insights (Job Simulation)<small>Jun 2026</small></div></div>
+<div class="card cert"><i>🎓</i><div>The Complete Python Bootcamp From Zero to Hero in Python<small>May 2025</small></div></div></div></div></section>
+
+<section><div class="container"><div class="cta reveal"><h2>Let's turn your data into clear decisions.</h2><a class="btn btn-primary" href="contact.html">Contact Me →</a></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="foot">
+<div><strong class="grad">Mohamed Sufeeyan</strong><p>ECE graduate turning raw data into clear insights with SQL, Power BI and Excel, and deploying on AWS.</p>
+<div class="social"><a href="https://github.com/mohamed-sufeeyan" aria-label="GitHub" target="_blank" rel="noopener">GH</a>
+<a href="https://www.linkedin.com/in/mohamed-sufeeyan" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+<a href="mailto:sufeeyanmohamed@gmail.com" aria-label="Email">@</a></div></div>
+<nav aria-label="Footer"><ul><li><a href="index.html">Home</a></li><li><a href="education-experience.html">Education &amp; Experience</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div><p>sufeeyanmohamed@gmail.com</p><p>+91 7406315560</p></div></div>
+<p class="copy">© 2026 Mohamed Sufeeyan. All rights reserved.</p></div></footer>
+<button class="icon-btn" id="top" aria-label="Back to top">↑</button>
+<script src="js/script.js"></script></body></html>
